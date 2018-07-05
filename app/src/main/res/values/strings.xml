@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MyTourGuide</string>
+    <string name="city_name">pune</string>
+    <string name="list_info">Places Of Interest</string>
+    <string name="website">Website</string>
+    <string name="hours">Hours</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+
+    <string name="place_name">Place Name</string>
+    <string name="place_location">Location of the place</string>
+    <string name="place_hours">11:00am to 7:00pm</string>
+    <string name="place_phone">9087654321</string>
+    <string name="place_website">https://www.placename.com/some-content</string>
+    <string name="place_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam corporis cumque dolor dolore ea eaque eius esse expedita fugiat incidunt ipsam labore neque numquam, optio perspiciatis placeat possimus reiciendis sit.</string>
+
+
+</resources>

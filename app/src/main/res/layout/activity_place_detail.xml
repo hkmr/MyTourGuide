@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <ImageView
+                    tools:src="@drawable/lal_mahal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/detail_place_image"/>
+
+                <TextView
+                    android:text="@string/place_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/detail_place_name"/>
+
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fillViewport="true"
+                android:measureAllChildren="false"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/image_list">
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="8dp">
+
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:text="@string/address"
+                        style="@style/detail_label"/>
+
+                    <TextView
+                        tools:text="@string/place_location"
+                        android:minLines="2"
+                        style="@style/detail_label_text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/detail_place_address"/>
+
+                    <TextView
+                        android:text="@string/hours"
+                        style="@style/detail_label"/>
+
+                    <TextView
+                        tools:text="@string/place_hours"
+                        style="@style/detail_label_text"
+                        android:id="@+id/detail_place_working_hours"/>
+
+                    <TextView
+                        android:text="@string/phone"
+                        style="@style/detail_label"/>
+
+                    <TextView
+                        tools:text="@string/place_phone"
+                        style="@style/detail_label_text"
+                        android:id="@+id/detail_place_phone"/>
+
+                    <TextView
+                        android:text="@string/website"
+                        style="@style/detail_label"/>
+
+                    <TextView
+                        android:id="@+id/detail_place_website"
+                        style="@style/detail_label_text"
+                        android:textColor="@color/colorPrimary"
+                        android:maxLines="2"
+                        tools:text="@string/place_website" />
+
+                    <TextView
+                        tools:text="@string/place_info"
+                        style="@style/detail_info"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@android:color/black"
+                        android:lineSpacingExtra="5sp"
+                        android:textSize="20sp"
+                        android:id="@+id/detail_place_info"/>
+
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
