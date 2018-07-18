@@ -14,5 +14,8 @@
     <string name="place_website">https://www.placename.com/some-content</string>
     <string name="place_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam corporis cumque dolor dolore ea eaque eius esse expedita fugiat incidunt ipsam labore neque numquam, optio perspiciatis placeat possimus reiciendis sit.</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

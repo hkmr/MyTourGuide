@@ -26,9 +26,9 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
 
         Place currentPlace = getItem(position);
 
-        TextView placeName = (TextView) convertView.findViewById(R.id.place_name);
-        TextView placeAddress = (TextView) convertView.findViewById(R.id.place_address);
-        ImageView placeImage = (ImageView) convertView.findViewById(R.id.place_image);
+        TextView placeName =  convertView.findViewById(R.id.place_name);
+        TextView placeAddress =  convertView.findViewById(R.id.place_address);
+        ImageView placeImage =  convertView.findViewById(R.id.place_image);
 
         placeName.setText(currentPlace.getmName());
         placeAddress.setText(currentPlace.getmLocation());
